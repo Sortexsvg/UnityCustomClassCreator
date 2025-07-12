@@ -1,0 +1,13 @@
+using System.Collections.Generic;
+using System;
+
+namespace SampleNameSpace
+{
+    public class #SCRIPTNAME# 
+    {
+       public #SCRIPTNAME# ()
+        {
+
+        }
+    }
+}

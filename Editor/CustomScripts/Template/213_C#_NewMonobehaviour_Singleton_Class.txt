@@ -1,0 +1,33 @@
+using UnityEngine;
+
+namespace SampleNameSpace
+{
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
+        static #SCRIPTNAME# s_Instance;
+        public static #SCRIPTNAME# Instance => s_Instance;
+        private void Awake()
+        {
+            if (s_Instance == null)
+            {
+                s_Instance = this;
+                DontDestroyOnLoad(gameObject); 
+            }
+            else if (s_Instance != this)
+            {
+                Destroy(gameObject); 
+            }
+        }
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+using System.Collections.Generic;
+using System;
+
+namespace SampleNameSpace
+{
+    public class #SCRIPTNAME#
+    {
+        private #SCRIPTNAME#()
+        {
+
+        }
+        static #SCRIPTNAME# s_Instance;
+        public static #SCRIPTNAME# Instance
+        {
+            get
+            {
+                if(s_Instance == null)
+                    s_Instance = new ();
+            return s_Instance;
+            }
+        }
+    }
+}
